@@ -4,12 +4,19 @@ using exemploPOO.Models;
 namespace exemploPOO{
     class Program{
         static void Main(string[] args){
-            Pessoa p1 = new Pessoa();
 
-            p1.Nome = "Joao";
-            p1.Idade = 27;
+            Retangulo r = new Retangulo();
 
-            p1.Apresentar();
+
+            r.definirMedidas(30, 30);
+
+            System.Console.WriteLine($"Area: {r.obterArea()}");
+            // Pessoa p1 = new Pessoa();
+
+            // p1.Nome = "Joao";
+            // p1.Idade = 27;
+
+            // p1.Apresentar();
         }
     }
 }
