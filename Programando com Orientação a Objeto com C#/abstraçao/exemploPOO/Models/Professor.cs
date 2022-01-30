@@ -6,7 +6,8 @@ namespace exemploPOO.Models
     {
         public double Salario { get; set; };
 
-         public override void Apresentar(){
+        // metodo selado
+         public sealed override void Apresentar(){
             Console.WriteLine($"Ola meu nome e {Nome} e ganho: {Salario}");
         }
     }

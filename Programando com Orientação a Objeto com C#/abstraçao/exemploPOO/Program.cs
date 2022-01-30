@@ -5,9 +5,16 @@ namespace exemploPOO{
     class Program{
         static void Main(string[] args){
 
-            Calculadora cl = new Calculadora();
-            System.Console.WriteLine("Resultado da primeria soma: "+ cl.Somar(20, 30));
-            System.Console.WriteLine("Resultado da segunda soma: "+ cl.Somar(20, 30, 10));
+            Computador pc = new Computador();
+            System.Console.WriteLine(pc.ToString());
+
+            // Corrente c = new Corrente();
+            // c.Creditar(100);
+            // c.exibirSaldo();
+            
+            // Calculadora cl = new Calculadora();
+            // System.Console.WriteLine("Resultado da primeria soma: "+ cl.Somar(20, 30));
+            // System.Console.WriteLine("Resultado da segunda soma: "+ cl.Somar(20, 30, 10));
 
             // Aluno al = new Aluno();
             // al.Nome = "Jose";
