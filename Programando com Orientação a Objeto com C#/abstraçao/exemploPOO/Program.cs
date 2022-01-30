@@ -1,12 +1,16 @@
 ﻿using System;
+using exemploPOO.interfaces;
 using exemploPOO.Models;
 
 namespace exemploPOO{
     class Program{
         static void Main(string[] args){
 
-            Computador pc = new Computador();
-            System.Console.WriteLine(pc.ToString());
+            iCalculadora calc = new Calculadora();
+            System.Console.WriteLine(calc.Somar(45, 10));
+
+            // Computador pc = new Computador();
+            // System.Console.WriteLine(pc.ToString());
 
             // Corrente c = new Corrente();
             // c.Creditar(100);
