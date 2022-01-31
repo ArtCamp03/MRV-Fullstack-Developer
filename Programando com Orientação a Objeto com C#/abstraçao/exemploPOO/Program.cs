@@ -1,13 +1,22 @@
 ﻿using System;
+using exemploPOO.Helper;
 using exemploPOO.interfaces;
 using exemploPOO.Models;
 
 namespace exemploPOO{
     class Program{
         static void Main(string[] args){
+            var caminho = "C:\Users\artur\Documents\DIO - Digital Innovation One\MRV-Fullstack-Developer\Programando com Orientação a Objeto com C#\Arquivos"
+            var caminhpPàthCombine = Path.Combine(caminho, "teste3", "subTeste3");
 
-            iCalculadora calc = new Calculadora();
-            System.Console.WriteLine(calc.Somar(45, 10));
+            FileHelper helper = new FileHelper();
+            // helper.ListaArquivosDiretorios(caminho);
+            // helper.ListarDiretorios(caminho);
+            System.Console.WriteLine("criando diretorio: "+caminhpPàthCombine);
+            helper.criarDiretorio(caminhpPàthCombine);
+
+            // iCalculadora calc = new Calculadora();
+            // System.Console.WriteLine(calc.Somar(45, 10));
 
             // Computador pc = new Computador();
             // System.Console.WriteLine(pc.ToString());
