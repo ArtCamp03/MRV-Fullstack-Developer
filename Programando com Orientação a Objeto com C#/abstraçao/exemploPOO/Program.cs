@@ -7,13 +7,28 @@ namespace exemploPOO{
     class Program{
         static void Main(string[] args){
             var caminho = "C:\Users\artur\Documents\DIO - Digital Innovation One\MRV-Fullstack-Developer\Programando com Orientação a Objeto com C#\Arquivos"
-            var caminhpPàthCombine = Path.Combine(caminho, "teste3", "subTeste3");
+            var caminhoPathCombine = Path.Combine(caminho, "teste3", "subTeste3");
+            var criarArquivo = Path.Combine(caminho, "NovoArquivo.txt")
+            var caminhoArquivoTeste = Path.Combine(caminho, "NovoArquivo.txt")
+            var caminhoArquivoTesteCopia = Path.Combine(caminho, "NovoArquivoTeste-bkp.txt")
+            var novoCaminhoArquivo = Path.Combine(caminho,"teste2", "NovoArquivo2.txt")
+            var listaString = new List<string> {"Linha 1", "Linha 2", "Linha 3"};
+            var listaString2 = new List<string> {"Linha 4", "Linha 5", "Linha 6"};
+
 
             FileHelper helper = new FileHelper();
             // helper.ListaArquivosDiretorios(caminho);
             // helper.ListarDiretorios(caminho);
-            System.Console.WriteLine("criando diretorio: "+caminhpPàthCombine);
-            helper.criarDiretorio(caminhpPàthCombine);
+            // System.Console.WriteLine("criando diretorio: "+caminhoPathCombine);
+            // helper.criarDiretorio(caminhoPathCombine);
+            // helper.apagarDiretorio(caminhoPathCombine, true);
+            // helper.criarArquivoTexto(criarArquivo, "Ola a todos");
+            // helper.criarArquivoTextoStream(criarArquivo, listaString);
+            // helper.adicionarTextoStream(criarArquivo, listaString2);
+            // helper.lerArquivoStream(criarArquivo);
+            // helper.moverArquivo(criarArquivo, novoCaminhoArquivo, false);
+            helper.copiarArquivo(caminhoArquivoTeste, caminhoArquivoTesteCopia, false);
+            helper.deletarArquivo(caminhoArquivoTesteCopia);
 
             // iCalculadora calc = new Calculadora();
             // System.Console.WriteLine(calc.Somar(45, 10));
