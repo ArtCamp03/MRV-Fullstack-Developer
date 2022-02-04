@@ -4,7 +4,9 @@ namespace ExemploConstrutores{
     class Program{
 
         static void main (String[] args){
-
+            const double pi = 3.14
+            System.Console.WriteLine(pi);
+            
             // Pessoa p1 = new Pessoa("Joao", Julho);
             // p1.Apresentar();
 
@@ -18,11 +20,11 @@ namespace ExemploConstrutores{
             // Aluno p1 = new Aluno("Joao", "Julho", "C comp");
             // p1.Apresentar();
 
-            Data data = new Data();
-            data.SetMes(2);
+            // Data data = new Data();
+            // data.SetMes(2);
 
-            data.Mes = 12;
-            System.Console.WriteLine(data.Mes);
+            // data.Mes = 12;
+            // System.Console.WriteLine(data.Mes);
         }
     }
 }
