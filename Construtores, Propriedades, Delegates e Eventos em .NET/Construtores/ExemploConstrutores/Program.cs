@@ -3,10 +3,19 @@
 namespace ExemploConstrutores{
     class Program{
 
+        public delegate void Operacao(int a, int );
         static void main (String[] args){
-            const double pi = 3.14
-            System.Console.WriteLine(pi);
-            
+
+            // Operacao op = Calculadora.Somar;
+            Operacao op = new Operacao(Calculadora.Somar);
+            op.Invoke(10,5);
+            // adicona mais um metodo a op sem perder referencia do metodo soma
+            p += Calculadora.Subtrair;
+            // op(20,47);
+
+            // const double pi = 3.14
+            // System.Console.WriteLine(pi);
+
             // Pessoa p1 = new Pessoa("Joao", Julho);
             // p1.Apresentar();
 
