@@ -15,8 +15,14 @@ namespace ExemploConstrutores{
             // Log log2 = Log.getInstance();
             // System.Console.WriteLine(log2);
 
-            Aluno p1 = new Aluno("Joao", "Julho", "C comp");
-            p1.Apresentar();
+            // Aluno p1 = new Aluno("Joao", "Julho", "C comp");
+            // p1.Apresentar();
+
+            Data data = new Data();
+            data.SetMes(2);
+
+            data.Mes = 12;
+            System.Console.WriteLine(data.Mes);
         }
     }
 }
