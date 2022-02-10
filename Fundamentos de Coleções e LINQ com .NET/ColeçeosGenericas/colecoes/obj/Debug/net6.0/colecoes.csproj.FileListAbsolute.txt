@@ -1,0 +1,5 @@
+C:\Users\artur\Documents\DIO - Digital Innovation One\MRV-Fullstack-Developer\Fundamentos de Coleções e LINQ com .NET\Collections\colecoes\obj\Debug\net6.0\colecoes.csproj.AssemblyReference.cache
+C:\Users\artur\Documents\DIO - Digital Innovation One\MRV-Fullstack-Developer\Fundamentos de Coleções e LINQ com .NET\Collections\colecoes\obj\Debug\net6.0\colecoes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artur\Documents\DIO - Digital Innovation One\MRV-Fullstack-Developer\Fundamentos de Coleções e LINQ com .NET\Collections\colecoes\obj\Debug\net6.0\colecoes.AssemblyInfoInputs.cache
+C:\Users\artur\Documents\DIO - Digital Innovation One\MRV-Fullstack-Developer\Fundamentos de Coleções e LINQ com .NET\Collections\colecoes\obj\Debug\net6.0\colecoes.AssemblyInfo.cs
+C:\Users\artur\Documents\DIO - Digital Innovation One\MRV-Fullstack-Developer\Fundamentos de Coleções e LINQ com .NET\Collections\colecoes\obj\Debug\net6.0\colecoes.csproj.CoreCompileInputs.cache
