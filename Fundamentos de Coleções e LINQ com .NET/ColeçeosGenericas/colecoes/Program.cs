@@ -1,30 +1,68 @@
-﻿namespace colecoes {
+﻿using System.Linq;
+using System.Collections.Generic;
+using colecoes.Helper;  
+using colecoes.Models;
+
+namespace colecoes {
     class Program{
 
         static void Main(string[] args){
 
-            Stack<string> pilhaLivros = new Stack<string>;
+            // utilizando Linq
+            int[] arrayNumeros = new int[7] {5,7,8,9,6,5,8};
+
+            // adiconando valores max , min e medios
+            var minimo = arrayNumeros.Min();
+            var maximo = arrayNumeros.Max();
+            var medio = arrayNumeros.Average();
+            // sum soma tds valores e retorna o resultado
+            var soma = arrayNumeros.Sum();
+            // elementos distintos
+            var arrayUnico = arrayNumeros.Distinct().ToArray() ;
+
+            System.Console.WriteLine($"Minimo: {minimo}");
+            System.Console.WriteLine($"Maximo: {maximo}");
+            System.Console.WriteLine($"Medio: {medio}");
+            System.Console.WriteLine($"Soma: {soma}");
+            System.Console.WriteLine($"Array original: {string.Join(", ", arrayNumeros)}");
+            System.Console.WriteLine($"Array distinto: {string.Join(", ", arrayUnico)}");
+
+
+            // utilizando busca com Query s
+            // var numerosParesQuery =
+            //     from num in arrayNumeros
+            //     where num % 2 == 0
+            //     orderby num
+            //     select num;
+
+            // var numerosParesMetodo = arrayNumeros.Where(x -> x % 2 == 0 ).orderby(x -> x).ToList();
+
+            // System.Console.WriteLine("Numeros pares query: "+ string.Join(", ",numerosParesMetodo));
+            // System.Console.WriteLine("Numeros pares metodos: "+ string.Join(", ",numerosParesMetodo));
+
+            
+            // Stack<string> pilhaLivros = new Stack<string>;
 
             // Dicionario
-            Dictionary<string,string> estados = new Dictionary<string, string>;
-            estados.Add("SP", "Sao Paulo");
-            estados.Add("MG", "Minas Gerais");
-            estados.Add("MT", "Mato Grosso")
+            // Dictionary<string,string> estados = new Dictionary<string, string>;
+            // estados.Add("SP", "Sao Paulo");
+            // estados.Add("MG", "Minas Gerais");
+            // estados.Add("MT", "Mato Grosso")
             
              
-            foreach (KeyValueParse<string,string> item in estados){
-                System.Console.WriteLine($"Chave: {item.Key} valor: {item.Value}");
-            }
+            // foreach (KeyValueParse<string,string> item in estados){
+            //     System.Console.WriteLine($"Chave: {item.Key} valor: {item.Value}");
+            // }
 
-            string valorProcurado = "BA";
+            // string valorProcurado = "BA";
             // valor inexistente
             // var teste = estados["SC"]
             // acessando o dicionario de maneira segura
-            if(estados.TryGetValue(valorProcurado, out string estadoEncontrado)){
-                System.Console.WriteLine(estadoEncontrado);
-            }else{
-                System.Console.WriteLine($"Chave: {valorProcurado} nao existe");
-            }
+            // if(estados.TryGetValue(valorProcurado, out string estadoEncontrado)){
+            //     System.Console.WriteLine(estadoEncontrado);
+            // }else{
+            //     System.Console.WriteLine($"Chave: {valorProcurado} nao existe");
+            // }
 
             // System.Console.WriteLine(Original$"Removendo o valor: {valorProcurado});
             // estados.Remove(valorProcurado);
